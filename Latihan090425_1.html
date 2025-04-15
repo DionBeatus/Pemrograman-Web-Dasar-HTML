@@ -26,7 +26,7 @@
 
             .icon-box:hover {
                 border:1px solid purple;
-                animation: bounce 2s infinite;
+                animation: fadeslidedown 2s infinite;
             }
 
             @keyframes bounce {
@@ -46,16 +46,16 @@
 
             }
 
-            .icon-box i.rotate {
-                animation: rotate 2s linear infinite;
+            .icon-box i.fadeslidedown{
+                animation: fadeslidedown 2s linear infinite;
             }
 
-            @keyframes rotate {
+            @keyframes flatslidedown {
                 0% {
-                    tranform: rotate(0deg); 
+                    tranform: flatslidedown(0deg); 
                 }
                 100% {
-                    transform: rotate(360deg); 
+                    transform: flatslidedown(360deg); 
                 }
             }
 
@@ -71,7 +71,7 @@
         </div>
 
         <div class="icon-box">
-            <i class="fas fa-envelope rotate"></i>
+            <i class="fas fa-envelope flatslidedown"></i>
             <p>Email</p>
         </div>
 
