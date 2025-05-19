@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Latihan Javascript</title>
+    </head>
+    <body>
+        <input type="text" id="nama" onkeyup="dion()">
+        <button type="button" onclick="dion()" id="btn_tampil">Tampil</button>
+        <div id="tampil_data"></div>
+
+        <button type="button" value="pink" onclick="ratna(this.value)">Pink</button>
+        <button type="button" value="green" onclick="ratna(this.value)">Green</button>
+        <button type="button" value="blue" onclick="ratna(this.value)">Blue</button>
+        <button type="button" value="yellow" onclick="ratna(this.value)">Yellow</button>
+    </body>
+</html>
+<script>
+    function dion()
+    {
+        var nama = document.getElementById("nama").value;
+        // alert("Hello, " + nama + "!");
+        document.getElementById("tampil_data").innerHTML = nama;
+    }
+
+    function ratna(warna)
+    {
+        document.getElementById("btn_tampil").style.backgroundColor = warna;
+    }
+</script>
